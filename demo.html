@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>标题</title>
+	<link rel="stylesheet" type="text/css" 
+		href="style.css"><!--外部式 -->
+	<style type="text/css">
+		/*嵌入式 */
+		h2 {color: blue}
+		input {color: yellow}/*标签选择器*/
+		.demo {color: gold}/*类选择器*/
+		.demo2 {font-size: 25px;color: red}
+		#demo {color: red}/*id选择器*/
+		#div >div>.demo{border: 3px solid #000}/*子选择器*/
+		#div div .demo{border: 3px solid #001}/*后代选择器*/
+		span:hover{
+			color: red;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<span>伪类选择器</span>
+	<div id="div">
+		<div>div1</div>
+		<div>div2
+			<div class="demo">div21</div>
+			<div>div22
+				<div>div221</div>
+			</div>
+		</div>
+		<div>div3</div>
+	</div>
+	内容
+	<!-- 内联式 -->
+	<h1 style="color: red;font-size: 30px">标题</h1>
+	<h2>标题</h2>
+	<h6 class="demo">demo</h6>
+	<h6 class="demo demo2">demo,</h6>
+	<h6>demo,</h6>
+	<p id="demo">段落</p>
+	<p>段落</p>
+	<p>段落</p>
+	<p>段落</p>
+	<input type="text" name="text1">
+</body>
+</html>
